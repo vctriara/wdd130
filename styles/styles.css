@@ -1,4 +1,4 @@
-nav {
+nav{
     background-color: darkblue;
     padding: 10px;
 }
@@ -7,23 +7,23 @@ nav a{
     display: block;
     padding: 20px;
 }
-h1 {
+h1{
     color: darkblue;
 }
-main img {
+main img{
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p {
+p{
     padding: 0px;
 }
-main {
+main{
     max-width: 840px;
 }
-aside {
+aside{
     width:20rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -32,11 +32,11 @@ aside {
     color: rgb(8, 30, 65);
     text-align: center;
 }
-aside img {
+aside img{
     width: 200px;
     height: auto;
 }
-footer {
+footer{
     margin-top: 1rem;
     border-top: 1px solid black;
     text-align: center;
