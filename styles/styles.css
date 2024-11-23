@@ -1,14 +1,28 @@
+:root {
+    --navigation-background-color: darkblue;
+    --nabigation-font-size: 16px;
+    --heading-size: 30px;
+    --heading-font: Comic Sans MS, Comic Sans, cursive;
+}
+
 nav{
-    background-color: darkblue;
+    background-color: var(--navigation-background-color);
     padding: 10px;
 }
 nav a{
     color: white;
     display: block;
     padding: 20px;
+    font-size: var(--nabigation-font-size);
 }
 h1{
-    color: darkblue;
+    color: var(--navigation-background-color);
+    font-size: var(--heading-size);
+    font-family: var(--heading-font);
+}
+
+h2{
+    font-family: var(--heading-font);
 }
 main img{
     width: 150px;
@@ -41,3 +55,4 @@ footer{
     border-top: 1px solid black;
     text-align: center;
 }
+
