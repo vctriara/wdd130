@@ -28,7 +28,7 @@ h1{
     margin: 1rem;
 }
 
-main h2{
+main h3{
     font-family: var(--heading-font);
     font-size: var(--heading2-size);
     margin: 1rem;
