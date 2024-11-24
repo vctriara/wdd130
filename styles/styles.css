@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 nav{
     background-color: var(--navigation-background-color);
     padding: 5px;
@@ -21,6 +22,7 @@ nav a{
     padding: 20px;
     font-size: var(--navigation-font-size);
 }
+
 h1{
     color: var(--navigation-background-color);
     font-size: var(--heading1-size);
@@ -44,8 +46,12 @@ main img{
     margin: 0 1rem 0 1rem;
 }
 p{
+    font-family:Georgia;
+}
+main p{
     padding: 1rem 1rem 0; 
 }
+
 main{
     max-width: 840px;
 }
@@ -63,6 +69,7 @@ aside h2 {
 }
 aside img{
     width: 100%;
+    margin-bottom: 1rem;
 }
 footer{
     margin-top: 1rem;
