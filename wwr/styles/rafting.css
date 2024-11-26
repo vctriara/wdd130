@@ -8,7 +8,7 @@
     --text-font: "Montserrat", serif;
 }
 
-nav{
+header nav{
     font-size: 1.2rem;
     display: flex;
 }
@@ -27,7 +27,7 @@ a{
     padding: 1rem;
 }
 .sociallinks img{
-    max-width: 1rem;
+    max-width: 2rem;
     height: auto;
 }
 
