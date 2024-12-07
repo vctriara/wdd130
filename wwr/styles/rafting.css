@@ -9,7 +9,8 @@
 }
 header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.1);
 
 }
 
@@ -67,10 +68,11 @@ a{
     top: 20px; /* Move it down from the top */
     left: 20px; /* Position it from the left */
     color:white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     z-index: 10; /* Ensure it's on top of the image */
     padding: 10px;
     background-color:  rgba(0, 0, 0, 0.5);
+    
 }
 .hero img {
     width: 100%;
@@ -86,10 +88,14 @@ a{
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5); /* Add background color with some transparency */
     color: white; 
+    max-width: 800px;
+    margin: 0 auto;
 }
 .hero article p {
     padding-right: 160px; /* Space for the image on the right */
     margin: 0;
+    max-width: 650px;
+    text-align: center;
 }
 .hero article img {
     position: absolute;
@@ -107,12 +113,15 @@ background-color: #c4d6b0;
 .section{
     display: grid;
     justify-content: space-around;
+    margin: auto;
 }
 section h2{
     text-align: center;
 }
 .history{
     grid-template-columns: 2fr 1fr 2fr;
+    background-color: #fff;
+    margin-bottom: 3rem;
 }
 .section img{
     height: 200px;
@@ -122,6 +131,7 @@ section h2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    justify-content: center;
+
 }
 .photos img {
     width: 100%; /* Images take up the full width of their grid cell */
@@ -135,6 +145,7 @@ figure{
     max-width: 300px;
     margin: auto;
 }
+
 figcaption {
     font-family: var(--text-font);
     font-size: smaller;
@@ -147,7 +158,9 @@ footer p{
 }
 .footer{
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    border-top: .5px solid rgba(0, 0, 0, 0.1);
+    margin: .5rem;
 }
 .sociallinks{
     display: flex;
@@ -162,8 +175,197 @@ footer p{
     height: auto;
 }
 footer nav a{
-    color: #106fa3;
+    color: #1070a3;
     text-align: center;
     padding: 4px;
+    margin: 0.5rem;
+}
+.team{
+    background-color: #fff;
+}
+.icon-text {
+    display: flex;
+    gap: 8px;
+    margin: 0 auto 1rem;
+}
+.icon-text h2{
+    margin: 0;
+    text-align: center;
+}
+
+.icon-text i {
+    color: #1070a3c7; 
+    font-size: 18px; 
+    flex-shrink: 0;
+}
+
+.icon-text span {
+    font-size: 1.1rem; 
+    color: #072f44;
+    text-align: left;
+    margin: 0 auto; 
+    padding-left: 0.5rem;
+    margin-left: 0;
+   
+}
+.information{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+    
+}
+.location{
+    padding: 1rem;
+    
+}
+
+.contact{
+    text-align: left;
+}
+
+.location iframe{
+    display: flex;
+    padding: 1rem;    width: 500px;
+    height: 500px;
+}
+
+.team {
+    font-size: larger;
+    font-weight: 600;
+    padding: 1rem;
+    
+}
+
+.employee{
+    gap:10px;
+}
+.employee img {
+    width: 100%;  
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 15px; 
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
+form legend{
+    text-align: center;
+
+}
+
+.form{
+    font-family: Quicksand, sans-serif;
+    font-size: 1em;
+    background: var(--accent1-color);
+    box-sizing: border-box;
+}
+
+.form header{
+    margin: 0 auto;
+    padding: 1rem;
+    width: auto;
+    max-width: 600px;
+   
+}
+.form h1 {
     margin: 1rem;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form{
+    width:auto;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color:#fff;
+    display: grid;
+}
+
+.form fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin:0;
+    padding: 1rem;
+    border: none;
+}
+
+legend {
+    padding: .5rem;
+    color: #083954;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+
+label, input, button, select, textarea {
+    font-family:var(--text-font);
+}
+label{
+    text-align: left;
+    padding-right: 1rem;
+}
+input, select, textarea{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+
+}
+
+button{
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.6rem;
+}
+
+button:hover{
+    background-color: #083954;
+    text-decoration: underline;
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: .5rem 0;
+}
+
+.column1{
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem 0;
+    width: 100%
+}
+
+.column2{
+    grid-template-columns:  1fr 1fr;
+    margin: .5rem 0 0 0;
+    width: 100%;
+}
+
+.email input{
+    width: 90%;
+}
+
+.name input{
+    width:85%
+}
+.wireframe{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #1070a3;
+    text-decoration: underline;
+    grid-column:1/5;
 }
