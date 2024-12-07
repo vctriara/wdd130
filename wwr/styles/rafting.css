@@ -231,6 +231,7 @@ footer nav a{
     display: flex;
     padding: 1rem;    width: 500px;
     height: 500px;
+    border: none;
 }
 
 .team {
