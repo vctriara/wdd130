@@ -28,7 +28,7 @@
     <main>
         <div class="information">
             <div class="contact">
-                    <h2>Contact Us</h2>
+                    <h1>Contact Us</h1>
                 <div class="icon-text">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>1041 Rte 148, Bryson, Quebec J0X 1H0, Canada</span>
@@ -78,12 +78,19 @@
                     </div>
                 </div>
                 <div class="form-item">
-                    <label for="message">Purpose of the message:</label>
-                    <select id="message" name="message">
-                        <option value="general">General Inquiry</option>
-                        <option value="question">Reservation Question</option>
-                        <option value="suggestion">Website Suggestion</option>
-                    </select>
+                    <label for="purpose">Purpose of the message:</label>
+                    <div>
+                        <label for="general">General Inquiry</label>
+                        <input type="radio" id="general" name="purpose">
+                    </div>
+                    <div>
+                        <label for="questions">Reservation Questions</label>
+                        <input type="radio" id="questions" name="purpose">
+                    </div>
+                    <div>
+                        <label for="suggestions">Website Suggestions</label>
+                        <input type="radio" id="suggestions" name="purpose">
+                    </div>
                     <div class="form-item">
                         <textarea id="feedback" name="feedback" rows="6" placeholder="Hello! I'm trying to book ..."></textarea>
                     </div>
