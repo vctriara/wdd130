@@ -11,7 +11,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 3fr;
     border-bottom: .5px solid rgba(0, 0, 0, 0.1);
-
+    max-height: 200px;
 }
 
 header nav{
@@ -19,10 +19,9 @@ header nav{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 header nav a{
-    color: #106fa3;
+    color: var(--secondary-color);
 
 }
 
@@ -35,6 +34,7 @@ header nav a:hover{
 .logo-box{
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 .logo-box img {
     width:100px;
@@ -57,21 +57,29 @@ a{
     padding: 1rem;
 }
 
-
+body, html { 
+    margin: 0; 
+    padding: 0;
+}
 .hero {
     position: relative;
-    width: 100%; /* Ensures hero image takes full width */
-    height: 400px; /* Set a specific height for the hero section */
+    width: 100%; 
+    height: 400px; 
+    margin: 0 auto; 
+    overflow: hidden;
 }
 .hero h1{
     position: absolute;
-    top: 20px; /* Move it down from the top */
-    left: 20px; /* Position it from the left */
+    top: 20px; 
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content; 
     color:rgb(250, 250, 250);
     font-size: 2.5rem;
-    z-index: 10; /* Ensure it's on top of the image */
     padding: 10px;
     text-shadow: 0px 0px 6px var(--primary-color),0px 0px 5px #1b0f05;
+    text-align: center;
     
     
 }
@@ -79,12 +87,36 @@ a{
     width: 100%;
     height: 100%; 
     object-fit: cover; 
+
+}
+.home button{
+    position: absolute;
+    z-index: 5; 
+    top: 220px; 
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content; 
+    background-color:var(--secondary-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.home h1{
+    text-shadow: 0px 0px 6px #000000,0px 0px 5px #000000;
+    text-align: center;
+    right: 10px;
+    top: 120px;
 }
 
 .banner{
     flex-wrap: wrap;
-    height:auto;
     min-height: 150px;
+    max-height: 250px;
     position: absolute;
     top: 120px;  
     left: 10px; 
@@ -114,15 +146,17 @@ a{
 }
 section{
 padding: 1rem 0 1rem 0;
-margin: 1rem;
+margin: 2rem;
 background-color: #c4d6b0;
 flex-wrap: wrap;
+margin: 0 auto; 
+overflow: hidden;
 }
 
 .section{
     display: grid;
     justify-content: space-around;
-    margin: auto;
+    margin: 2rem;
     
 }
 section h2{
@@ -147,11 +181,11 @@ section h2{
 .photos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   justify-content: center;
+   justify-content: center;  
 
 }
 .photos img {
-    width: 100%; /* Images take up the full width of their grid cell */
+    width: 100%; 
     height: auto; 
     object-fit:cover;
 }
@@ -170,6 +204,101 @@ figcaption {
     font-style: italic;
     padding: 3px;
 }
+
+.photo-paragraph figcaption{
+   font-weight: 400;
+   width: 400px;
+   font-style: normal;
+}
+.photo-paragraph img{
+    width: 400px;
+    height: auto;
+    height: 300px;
+}
+.photo-paragraph { 
+    margin: 0 auto;  
+    padding: 5px; 
+    max-width: 300px; 
+    box-sizing: border-box;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.photo-paragraph h2{
+    text-align: center;
+    margin:1.5rem 0 .5rem 0;
+    align-items: center;
+    display: inline-block;
+
+}
+
+.full-width{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent1-color);
+    flex-wrap: wrap;
+    margin-bottom: 1px;
+}
+.tripsbanner img{
+    grid-column: 1/3;
+    width: 100%;
+    height: auto;
+    max-height: 400px; 
+    object-fit: cover; 
+    margin: 0;
+    padding:0;
+}
+.formbanner img{
+    grid-column: 2/4;
+    width: 100%;
+    height: auto;
+    max-height: 400px; 
+    object-fit: cover; 
+    margin: 0;
+    padding:0;
+}
+
+.paragraph{
+    margin: 0 1rem 0rem 3rem;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.paragraph p{
+    margin:0;
+}
+.paragraph h3{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 0;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.paragraph button{
+    margin-inline: auto; 
+    width: fit-content; 
+    background-color:var(--secondary-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 0;
+}
+.formbanner form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 footer p{
     text-align: center;
 }
@@ -199,6 +328,7 @@ footer nav a{
 }
 .team{
     background-color: #fff;
+    margin-bottom: 3rem;
 }
 .icon-text {
     display: flex;
